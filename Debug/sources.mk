@@ -62,6 +62,7 @@ ra/fsp/src/r_iwdt \
 ra/fsp/src/r_sci_uart \
 ra_gen \
 selex-fdk/bsp/src \
+selex-fdk/services/src \
 selex-fdk/sm_hal/src \
 selex-fdk/utils/src \
 src \

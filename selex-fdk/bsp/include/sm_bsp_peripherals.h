@@ -19,6 +19,7 @@
 
 #include "sm_porting.h"
 /* ADC */
+typedef uint16_t sm_bsp_adc_t;
 /**
  * @fn sm_bsp_adc_read_charger_voltage()
  * @brief
@@ -26,7 +27,7 @@
  * @param
  * @return
  */
-uint16_t sm_bsp_adc_read_charger_voltage();
+sm_bsp_adc_t sm_bsp_adc_read_charger_voltage();
 /**
  * @fn sm_bsp_adc_read_charger_voltage()
  * @brief
@@ -34,7 +35,7 @@ uint16_t sm_bsp_adc_read_charger_voltage();
  * @param
  * @return
  */
-uint16_t sm_bsp_adc_read_abp_voltage();
+sm_bsp_adc_t sm_bsp_adc_read_abp_voltage();
 
 /* CAN */
 typedef func_can_rx_callback sm_bsp_can_rx_irq_fn_t;

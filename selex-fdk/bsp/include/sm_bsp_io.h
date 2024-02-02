@@ -23,31 +23,32 @@ extern "C"{
 #include "sm_porting.h"
 
 
-#define    IN_KEY                   IOPORT_PORT_04_PIN_08
-#define    IN_HORN                  IOPORT_PORT_04_PIN_07
-#define    IN_PHASE_LIGHT           IOPORT_PORT_04_PIN_09
-#define    IN_HEAD_LIGHT            IOPORT_PORT_02_PIN_00
-#define    IN_TURN_LEFT_LIGHT       IOPORT_PORT_03_PIN_01
-#define    IN_TURN_RIGHT_LIGHT      IOPORT_PORT_00_PIN_15
-#define    IN_ECO_SPORT             IOPORT_PORT_02_PIN_06
-#define    IN_PARKING               IOPORT_PORT_02_PIN_07
+#define    SM_BSP_IN_KEY                   IOPORT_PORT_04_PIN_08
+#define    SM_BSP_IN_HORN                  IOPORT_PORT_04_PIN_07
+#define    SM_BSP_IN_PHASE_LIGHT           IOPORT_PORT_04_PIN_09
+#define    SM_BSP_IN_HEAD_LIGHT            IOPORT_PORT_02_PIN_00
+#define    SM_BSP_IN_TURN_LEFT_LIGHT       IOPORT_PORT_03_PIN_01
+#define    SM_BSP_IN_TURN_RIGHT_LIGHT      IOPORT_PORT_00_PIN_15
+#define    SM_BSP_IN_ECO_SPORT             IOPORT_PORT_02_PIN_06
+#define    SM_BSP_IN_PARKING               IOPORT_PORT_02_PIN_07
 
-#define    OUT_PHASE_LIGHT          IOPORT_PORT_00_PIN_00
-#define    OUT_TURN_LEFT_LIGHT      IOPORT_PORT_04_PIN_02
-#define    OUT_TURN_RIGHT_LIGHT     IOPORT_PORT_01_PIN_09
-#define    OUT_HORN                 IOPORT_PORT_00_PIN_01
-#define    OUT_CHARGER              IOPORT_PORT_00_PIN_02
-#define    OUT_MC_POWER             IOPORT_PORT_00_PIN_14
-#define    OUT_CAN_MODE             IOPORT_PORT_02_PIN_01
-#define    OUT_SW_12V               IOPORT_PORT_01_PIN_00
-#define    OUT_NODE_ID1             IOPORT_PORT_01_PIN_11
-#define    OUT_NODE_ID2             IOPORT_PORT_01_PIN_04
-#define    OUT_NODE_ID3             IOPORT_PORT_01_PIN_12
-#define    OUT_ABP_CHARGE           IOPORT_PORT_03_PIN_02
+#define    SM_BSP_OUT_PHASE_LIGHT          IOPORT_PORT_00_PIN_00
+#define    SM_BSP_OUT_TURN_LEFT_LIGHT      IOPORT_PORT_04_PIN_02
+#define    SM_BSP_OUT_TURN_RIGHT_LIGHT     IOPORT_PORT_01_PIN_09
+#define    SM_BSP_OUT_HORN                 IOPORT_PORT_00_PIN_01
+#define    SM_BSP_OUT_CHARGER              IOPORT_PORT_00_PIN_02
+#define    SM_BSP_OUT_MC_POWER             IOPORT_PORT_00_PIN_14
+#define    SM_BSP_OUT_CAN_MODE             IOPORT_PORT_02_PIN_01
+#define    SM_BSP_OUT_SW_12V               IOPORT_PORT_01_PIN_00
+#define    SM_BSP_OUT_NODE_ID1             IOPORT_PORT_01_PIN_11
+#define    SM_BSP_OUT_NODE_ID2             IOPORT_PORT_01_PIN_04
+#define    SM_BSP_OUT_NODE_ID3             IOPORT_PORT_01_PIN_12
+#define    SM_BSP_OUT_ABP_CHARGE           IOPORT_PORT_03_PIN_02
 
 #define    SM_BSP_IO_OFF            0
 #define    SM_BSP_IO_ON             1
 
+typedef int32_t sm_bsp_io_t;
 
 /**
  * @fn sm_bsp_io_get_value_key()
